@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: url('assets/bg-pattern-desktop.svg');
+  
+}
+
+.content {
+  max-width: 90%;
+  background: linear-gradient(to bottom, whitesmoke, white);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8em;
+}
+
+table, tr, td, th {
+  border: 1px solid red;
+  border-collapse: collapse;
+  padding: 1em 2em;
+}
+
+form {
+  width: 30em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+input {
+  border: 1px solid lightcoral;
+  border-radius: 1rem;
+  padding: 0.7em 1.5em;
+  margin: 2.5em 0;
+  width: 25em;
+}
+
+input::placeholder {
+  color: rgb(202, 202, 202);
+}
+
+button {
+  border: 1px solid lightgrey;
+  border-radius: 0.6rem;
+  padding: 0.7em 1.5em;
+  background: none;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+  border: none;
+  box-shadow: 0 6px 5px 0 lightgrey;
+}
+
+@media (max-width: 525px) {
+  body {font-size: 14px;}
+  form {
+    flex-direction: column;
+  }
+}
